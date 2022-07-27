@@ -10,5 +10,5 @@ def hello_task():
 with Flow("hello-flow") as flow:
     hello_task()
 
-flow = Flow("my-flow")
-flow.storage = Git(repo="my/repo", flow_path="/flows/flow.py", repo_host="github.com"
+flow = Flow("hello-flow")
+flow.storage = Git(repo="mfourt/test_prefectstorage", flow_path="/test.py", repo_host="github.com")
